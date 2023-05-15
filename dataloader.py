@@ -40,6 +40,7 @@ def data_split(df):
     val=nlp.Dataset.from_pandas(val_data,split='val')
     return train,test,val,testing_data
 
+# data preprocessing step
 def start_preprocessing(filepath):
     df=load_data(filepath)
     df=feature_engineering(df)
