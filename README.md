@@ -10,11 +10,16 @@ Dataset consist of roughly 130,000 wine reviews that have been scraped from www.
 
 Approach
 First step was to create baseline model with following steps.
+
 Exploratory data analysis- Understand Data distribution,  check if target labels are balanced/not, Type-Supervised classification problem, Checking for na’s.
 Data Cleaning –fixing na’s, removing outliers.
+
 Feature Engineering-filtering columns, Label encoding, converting datasets into Electra compatible format.
+
 Modeling- As we know transformer models have achieved State of art results when it comes to text classification. Upon reviewing model performances on publicly available data & evaluating GLUE benchmark, (Electra, XLNet, ALBERT models were chosen for this task).
+
 Electra was the first choice as its lighter in weight which makes it faster and computationally less expensive. 
+
 Electra was finetuned on given dataset and resulted in accuracy of 96%.
 
 Future work
